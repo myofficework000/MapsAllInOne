@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Map Type Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/btnMapTypeNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal" />
+
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/btnMapTypeSattelite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satellite" />
+
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/btnMapTypeHybrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hybrid" />
+
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/btnMapTypeTerrian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terrain" />
+    </LinearLayout>
+
+    <!-- Shape Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle" />
+
+        <Button
+            android:id="@+id/btnPolyline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Polyline" />
+
+        <Button
+            android:id="@+id/btnPolygon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Polygon" />
+    </LinearLayout>
+
+    <!-- Google Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        tools:context=".MainActivity" />
+</LinearLayout>
